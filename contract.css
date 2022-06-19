@@ -16,3 +16,28 @@ body {
     font-weight: bold;
     color: #1e6b5b;
 }
+i{
+    color: #777777;
+}
+.bg-dra-cal{
+    background: #1e6b5b;
+}
+.square{
+    height: 22px;
+    width: 22px;
+    background: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+}
+.square p{
+    margin: 0px;
+    padding: 0px;
+}
+.normal-font-size{
+    font-size: 12px;
+}
+.small-font-size{
+    font-size: 11px;
+}
