@@ -9,6 +9,10 @@ body {
     min-height: 1262px;
 }
 
+.weight{
+    font-weight: bold;
+}
+
 .header-form {
 }
 
@@ -19,8 +23,14 @@ body {
 i{
     color: #777777;
 }
+.col-dra-cal{
+    color: #1e6b5b;
+}
 .bg-dra-cal{
     background: #1e6b5b;
+}
+.bg-silver{
+    background-color: #cacaca;
 }
 .square{
     height: 22px;
@@ -40,4 +50,24 @@ i{
 }
 .small-font-size{
     font-size: 11px;
+}
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.grid-triagle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 35px solid #fff;
+    border-left: 30px solid transparent;
+}
+.container-gray {
+    background-color: #cacaca;
+}
+.header-title {
+    font-weight: bold;
+    color: #1e6b5b;
+    font-size: 12;
+    line-height: 0px;
 }
