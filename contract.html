@@ -1556,6 +1556,13 @@
 
             table {
                 border-collapse: collapse;
+                border-spacing: 0;
+
+            }
+
+
+            td {
+                padding: 0px;
             }
         }
 
@@ -1565,7 +1572,7 @@
 </head>
 
 <body>
-    <div class="container-view-1 mx-auto">
+    <div class="container-view-1 mx-auto p-0">
         <table class="header-form" style="width: 100%;">
             <tr>
                 <td style="width: 25%;">
@@ -1710,13 +1717,12 @@
                         INK</b> into the grey area</i></p>
         </div>
 
-        <div class="text-light bg-dra-cal pt-1 pb-1 pl-1" style="position: relative; margin-top: -10px;">
+        <div class="col-md-12 text-light bg-dra-cal pt-1 pb-1 pl-1" style="margin-top: -10px;">
             <p class="p-0 m-0" style="font-weight: bold; font-size: 10px;">I. Thông tin Nhà đầu tư - <i
                     class="text-light">Investor Details</i></p>
-            <div class="grid-triagle"></div>
         </div>
 
-        <div class="mt-3 d-flex flex-row">
+        <div class="mt-1 d-flex flex-row">
             <div style="background: #cacaca; width: 230px;" class="small-font-size pl-2 pr-2">
                 <div style="line-height: 3px;" class="pt-4">
                     <p>(*) Mục dành cho Nhà đầu tư nước ngoài</p>
@@ -1729,106 +1735,106 @@
             </div>
 
             <div class="normal-font-size">
-                <table>
+                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
                     <tr>
-                        <td style="width: 40px;">
+                        <td style="width: 40px; vertical-align: top;">
                             <div class="d-flex justify-content-center">
-                                1.
+                                <p style="font-size: 10px;">1.</p>
                             </div>
                         </td>
-                        <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Loại tài khoản</p>
-                                <i>Account type</i>
+                        <td style="width: 200px; vertical-align: top;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Loại tài khoản</p>
+                                <i style="font-size: 10px;">Account type</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row" style="width: 180px">
+                            <div class="d-flex flex-row" style="width: 180px; vertical-align: top;">
                                 <div class="square mr-2">
-                                    <p>x</p>
+                                    <p style="text-align: center;">x</p>
                                 </div>
-                                <div class="pt-1">
-                                    <p>Cá nhân/ <i>Individual</i></p>
+                                <div style="vertical-align: top;">
+                                    <p style="font-size: 10px">Cá nhân/ <i>Individual</i></p>
                                 </div>
                             </div>
                             <div class="d-flex flex-row" style="width: 180px">
                                 <div class="square mr-2">
                                 </div>
-                                <div class="pt-1">
-                                    <p>Pháp nhân/ <i>Institution</i></p>
+                                <div>
+                                    <p style="font-size: 10px">Pháp nhân/ <i>Institution</i></p>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
-                        <td style="width: 40px;">
+                    <tr>
+                        <td style="width: 40px; vertical-align: top;">
                             <div class="d-flex justify-content-center">
-                                2.
+                                <p style="font-size: 10px;">2.</p>
                             </div>
                         </td>
-                        <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Họ và tên Nhà đầu tư</p>
-                                <i>Full name of Investor</i>
+                        <td style="width: 200px; vertical-align: top;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px; ">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Họ và tên Nhà đầu tư</p>
+                                <i style="font-size: 10px;">Full name of Investor</i>
                             </div>
                         </td>
-                        <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                        <td class="d-flex flex-row" style="vertical-align: top;">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                     <p>FullName</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 75px;">
-                        <td style="width: 40px;">
+                    <tr>
+                        <td style="width: 40px; vertical-align: top;">
                             <div class="d-flex justify-content-center">
-                                3.
+                                <p style="font-size: 10px;">3.</p>
                             </div>
                         </td>
-                        <td style="width: 200px;">
+                        <td style="width: 200px; vertical-align: top;">
                             <div class="d-flex flex-column">
-                                <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                    <p>Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
-                                    <i>ID/ Passport / Business license no.</i>
+                                <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 8px; margin-bottom: 0px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
+                                    <i style="font-size: 8px;">ID/ Passport / Business license no.</i>
                                 </div>
-                                <div class="pl-5 mt-3 d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px;">
-                                    <p>Ngày cấp</p>
-                                    <i>Issuing date</i>
+                                <div class="pl-5 d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
+                                    <i style="font-size: 10px;">Issuing date</i>
                                 </div>
                             </div>
                         </td>
                         <td class="d-flex flex-column">
                             <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px; ">
                                         <p>DkshNumber</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Quốc tịch</p>
-                                    <i>Nationality</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
+                                    <i style="font-size: 10px;">Nationality</i>
                                 </div>
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                         <p>PermanentAddressCountry</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row mt-2">
-                                <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                         <p>DkshIssuedDate</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Nơi cấp</p>
-                                    <i>Issuing place</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
+                                    <i style="font-size: 10px;">Issuing place</i>
                                 </div>
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                         <p>DkshIssuedPlace</p>
                                     </div>
@@ -1836,46 +1842,46 @@
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
-                        <td style="width: 40px;">
+                    <tr>
+                        <td style="width: 40px; vertical-align: top;">
                             <div class="d-flex justify-content-center">
-                                4.
+                                <p style="font-size: 10px;">4.</p>
                             </div>
                         </td>
-                        <td style="width: 200px;">
+                        <td style="width: 200px; vertical-align: top;">
                             <div class="d-flex flex-column">
-                                <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                    <p>Ngày tháng năm sinh</p>
-                                    <i>Date of birth</i>
+                                <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
+                                    <i style="font-size: 10px;">Date of birth</i>
                                 </div>
                             </div>
                         </td>
-                        <td class="d-flex flex-column">
+                        <td class="d-flex flex-column" style="vertical-align: top;">
                             <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                         <p>DateOfBirth</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Giới tính</p>
-                                    <i>Sex</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
+                                    <i style="font-size: 10px;">Sex</i>
                                 </div>
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 0px;">
-                                        <p>Nam</p>
-                                        <i>Male</i>
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
+                                        <i style="font-size: 10px;">Male</i>
                                     </div>
                                     <div class="square mr-2">
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 0px;">
-                                        <p>Nữ</p>
-                                        <i>Female</i>
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
+                                        <i style="font-size: 10px;">Female</i>
                                     </div>
                                     <div class="square mr-2">
                                     </div>
@@ -1883,314 +1889,319 @@
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                             <div class="d-flex justify-content-center">
-                                5.
+                                <p style="font-size: 10px;">5.</p>
                             </div>
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Mã số giao dịch (*)</p>
-                                <i>Securities trading code</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Mã số giao dịch (*)</p>
+                                <i style="font-size: 10px">Securities trading code</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-2">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
-                            <div class="d-flex justify-content-center">6.</div>
+                            <div class="d-flex justify-content-center"><p style="font-size: 10px;">6.</p></div>
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Mã số thuế tại Việt Nam</p>
-                                <i>Vietnamese Tax ID</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Mã số thuế tại Việt Nam</p>
+                                <i style="font-size: 10px;">Vietnamese Tax ID</i>
                             </div>
                         </td>
-                        <td class="d-flex flex-row" style="height: 40px;">
-                            <div class="d-flex flex-row pt-2">
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 20px;">
-                        <td style="width: 40px;">
-                            <div class="d-flex justify-content-center">7.</div>
-                        </td>
-                        <td colspan="2" style="width: 200px;">
-                            <div class="d-flex justify-content-start align-items-center flex-row pr-2"
-                                style="line-height: 0px; height: 20px;">
-                                <p style="margin: 0px;">Thông tin liên hệ/</p>
-                                <i>Contact Details</i>
+                </table>
+                <div style="vertical-align: top; padding: 0px; height: 10px;">
+                    <div class="d-flex flex-row">
+                        <div style="width: 20px; vertical-align: top; height: 10px;">
+                            <div class="d-flex p-0 justify-content-center">
+                                <p style="font-size: 10px; margin-top:-3px">7.</p>
                             </div>
-                        </td>
-                    </tr>
-                    <tr style="height: 34px;">
+                        </div>
+                        <div class="d-flex justify-content-start flex-row pr-2" style="line-height: 9px;height: 10px">
+                            <p style="font-size: 10px; margin-bottom: 0px;">Thông tin liên hệ/ <i style="font-size: 10px;">Contact
+                                    Details</i></p>
+                        </div>
+                    </div>
+                </div>
+                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
                             <div class="d-flex justify-content-center flex-column pr-2"
-                                style="line-height: 0px; height: 40px;">
-                                <p>Điện thoại bàn / di động</p>
-                                <i>Phone number</i>
+                                style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn / di động</p>
+                                <i style="font-size: 10px;">Phone number</i>
                             </div>
                         </td>
-                        <td class="d-flex flex-row" style="height: 40px;">
+                        <td class="d-flex flex-row">
                             <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                         <p>PhoneNumber</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Số Fax</p>
-                                    <i>Fax No.</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p  style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
+                                    <i  style="font-size: 10px;">Fax No.</i>
                                 </div>
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Địa chỉ email</p>
-                                <i>Email address</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ email</p>
+                                <i style="font-size: 10px;">Email address</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                     <p>EmailAddress</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Địa chỉ thường trú</p>
-                                <i>Residential address</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ thường trú</p>
+                                <i style="font-size: 10px;">Residential address</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                     <p>PermanentAddress</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Địa chỉ liên lạc</p>
-                                <i>Mailing address</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ liên lạc</p>
+                                <i style="font-size: 10px;">Mailing address</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                     <p>ContactAddress</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr>
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 20px;">
-                        <td style="width: 40px;">
-                            <div class="d-flex justify-content-center">8.</div>
-                        </td>
-                        <td colspan="2" style="width: 200px;">
-                            <div class="d-flex justify-content-start align-items-center flex-row pr-2"
-                                style="line-height: 0px; height: 20px;">
-                                <p style="margin: 0px;">Người đại diện pháp luật/</p>
-                                <i>Legal Representative Details (**)</i>
+                </table>
+                <div style="vertical-align: top; padding: 0px; height: 10px;">
+                    <div class="d-flex flex-row">
+                        <div style="width: 20px; vertical-align: top; height: 10px;">
+                            <div class="d-flex p-0 justify-content-center">
+                                <p style="font-size: 10px; margin-top:-3px">8.</p>
                             </div>
-                        </td>
-                    </tr>
-                    <tr style="height: 34px;">
-                        <td style="width: 40px;">
-                        </td>
-                        <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Họ tên người đại diện</p>
-                                <i>Full name</i>
-                            </div>
-                        </td>
-                        <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="height: 34px;">
+                        </div>
+                        <div class="d-flex justify-content-start flex-row pr-2" style="line-height: 9px;height: 10px">
+                            <p style="font-size: 10px; margin-bottom: 0px;">Người đại diện pháp luật/ <i style="font-size: 10px;">Legal Representative Details (**)</i></p>
+                        </div>
+                    </div>
+                </div>
+                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Chức vụ</p>
-                                <i>Title</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Họ tên người đại diện</p>
+                                <i style="font-size: 10px;">Full name</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Chức vụ</p>
+                                <i style="font-size: 10px;">Title</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
+                                <i style="font-size: 10px;">Date of birth</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-column" style="vertical-align: top;">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
+                                        <p>DateOfBirth</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
+                                    <i style="font-size: 10px;">Sex</i>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex justify-content-center flex-column pr-2"
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
+                                        <i style="font-size: 10px;">Male</i>
+                                    </div>
+                                    <div class="square mr-2">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex justify-content-center flex-column pr-2"
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
+                                        <i style="font-size: 10px;">Female</i>
+                                    </div>
+                                    <div class="square mr-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
                             <div class="d-flex justify-content-center flex-column pr-2"
-                                style="line-height: 0px; height: 40px;">
-                                <p>Ngày tháng năm sinh</p>
-                                <i>Date of birth</i>
+                                style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Số CMND/ Hộ chiếu</p>
+                                <i style="font-size: 10px;">ID/ Passport</i>
                             </div>
                         </td>
-                        <td class="d-flex flex-row" style="height: 34px;">
+                        <td class="d-flex flex-row" style="vertical-align: top;">
                             <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Giới tính</p>
-                                    <i>Sex</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
+                                    <i style="font-size: 10px">Nationality</i>
                                 </div>
                                 <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 0px; height: 34px;">
-                                        <p>Nam</p>
-                                        <i>Male</i>
-                                    </div>
-                                    <div class="square mr-2 mt-1">
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 0px; height: 34px;">
-                                        <p>Nữ</p>
-                                        <i>Female</i>
-                                    </div>
-                                    <div class="square mr-2 mt-1">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="height: 34px;">
-                        <td style="width: 40px;">
-                        </td>
-                        <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2"
-                                style="line-height: 0px; height: 40px;">
-                                <p>Số CMND/ Hộ chiếu</p>
-                                <i>ID/ Passport</i>
-                            </div>
-                        </td>
-                        <td class="d-flex flex-row" style="height: 40px;">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Quốc tịch</p>
-                                    <i>Nationality</i>
-                                </div>
-                                <div class="d-flex flex-row pt-1">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="pl-5 d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Ngày cấp</p>
-                                <i>Issuing date</i>
+                            <div class="pl-5 d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
+                                <i style="font-size: 10px;">Issuing date</i>
                             </div>
                         </td>
-                        <td class="d-flex flex-row" style="height: 40px;">
+                        <td class="d-flex flex-row">
                             <div class="d-flex flex-row">
-                                <div class="d-flex flex-row pt-1">
-                                    <div class="square mt-1 mr-2 pl-2 justify-content-start" style="width: 100px;">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 0px; width: 80px;">
-                                    <p>Nơi cấp</p>
-                                    <i>Issuing place</i>
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
+                                    <i style="font-size: 10px;">Issuing place</i>
                                 </div>
-                                <div class="d-flex mt-1 flex-row pt-1">
+                                <div class="d-flex flex-row">
                                     <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Điện thoại bàn/di động</p>
-                                <i>Phone number</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn/di động</p>
+                                <i style="font-size: 10px;">Phone number</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="height: 34px;">
+                    <tr style="vertical-align: top;">
                         <td style="width: 40px;">
                         </td>
                         <td style="width: 200px;">
-                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 0px;">
-                                <p>Địa chỉ liên lạc</p>
-                                <i>Mailing address</i>
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ liên lạc</p>
+                                <i style="font-size: 10px;">Mailing address</i>
                             </div>
                         </td>
                         <td class="d-flex flex-row">
-                            <div class="d-flex flex-row pt-1">
+                            <div class="d-flex flex-row">
                                 <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
                                 </div>
                             </div>
@@ -2199,292 +2210,277 @@
                 </table>
             </div>
         </div>
-
-        <div class="text-light bg-dra-cal pt-1 pb-1 pl-1" style="position: relative; margin-top: -10px;">
-            <h6 class="p-0 m-0" style="font-weight: bold; font-size: 10px;">II. Người được uỷ quyền hợp pháp - <i
-                    class="text-light">Authorized person</i></h6>
-            <div class="grid-triagle"></div>
+        <div class="col-md-12 text-light bg-dra-cal pt-1 pb-1 pl-1" style="margin-top: 10px;">
+            <p class="p-0 m-0" style="font-weight: bold; font-size: 10px;">II. Người được uỷ quyền hợp pháp - <i
+                    class="text-light">Authorized person</i></p>
         </div>
 
-        <table class="mt-3">
-            <tr>
-                <td>
-                    <div style="background: #cacaca; width: 230px;" class="small-font-size pl-2 pr-2">
-                        <div style="line-height: 15px;" class="pt-4">
-                            <p>- Nhà đầu tư cá nhân được chọn một trong hai phạm vi ủy quyền.
-                                <br><i>Individual investors can choose one of the two authorization rights.</i>
-                                <br>- Nhà đầu tư tổ chức chỉ được chọn
-                                người ủy quyền thực hiện lệnh giao
-                                dịch chứng chỉ quỹ.
-                                <br><i>Institutional investors can only choose
-                                    the authorized person for trading.</i>
-                                <br>- Người được ủy quyền hợp pháp
-                                được thực hiện các quyền đã chọn
-                                trong phạm vi tất cả các quỹ do công ty
-                                quản lý quỹ Dragon Capital Việt Nam
-                                (DCVFM) quản lý, đã được đăng ký
-                                phía dưới trong mẫu đơn này.
-                                <br><i>Legal authorized person can exercise
-                                    all the authorized rights toward all the
-                                    registered Fund(s) below in this form
-                                    managed by Dragon Capital Vietfund
-                                    Management (DCVFM).</i>
-                            </p>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="normal-font-size">
-                        <table>
-                            <tr style="height: 34px;">
-                                <td style="width: 40px;">
-                                    <div class="text-center">
-                                        1.
-                                    </div>
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="pr-2" style="line-height: 0px;">
-                                        <p>Họ và tên Người được quỷ quyền</p>
-                                        <i>Full name</i>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr style="height: 34px;">
-                                <td style="width: 40px;">
-                                    <div class="text-center">
-                                        2.
-                                    </div>
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="pr-2" style="line-height: 0px;">
-                                        <p>Chức vụ</p>
-                                        <i>Title</i>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr style="height: 75px;">
-                                <td style="width: 40px;">
-                                    <div class="text-center">
-                                        3.
-                                    </div>
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="pr-2" style="line-height: 0px;">
-                                        <p>Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
-                                        <i>ID/ Passport / Business license no.</i>
-                                    </div>
-                                    <div class="pl-5 mt-3 pr-2" style="line-height: 0px;">
-                                        <p>Ngày cấp</p>
-                                        <i>Issuing date</i>
-                                    </div>
-                                </td>
-                                <td class="p-0">
-                                    <table>
-                                        <tr>
-                                            <td class="p-0">
-                                                <div class="square mr-2 pl-2" style="width: 100px;">
-                                                </div>
-                                            </td>
-                                            <td style="line-height: 0px; width: 80px;">
-                                                <p>Quốc tịch</p>
-                                                <i>Nationality</i>
-                                            </td>
-                                            <td>
-                                                <div class="square mr-2 pl-2 justify-content-start"
-                                                    style="width: 170px;">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-0">
-                                                <div class="square mr-2 pl-2" style="width: 100px;">
-                                                </div>
-                                            </td>
-                                            <td style="line-height: 13px;">
-                                                <p style="margin-bottom: 0px;">Nơi cấp</p>
-                                                <i style="line-height: 0px;">Issuing place</i>
-                                            </td>
-                                            <td>
-                                                <div class="square mr-2 pl-2 justify-content-start"
-                                                    style="width: 170px;">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="height: 34px;">
-                                <td style="width: 40px;">
-                                    <div class="text-center">
-                                        4.
-                                    </div>
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="pr-2" style="line-height: 0px;">
-                                        <p>Ngày tháng năm sinh</p>
-                                        <i>Date of birth</i>
-                                    </div>
-                                </td>
-                                <td class="p-0" style="width: 100px;">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="square mr-2 pl-2 " style="width: 100px;">
-                                                </div>
-                                            </td>
+        <div class="mt-1 d-flex flex-row">
+            <div style="background: #cacaca; width: 230px;" class="small-font-size pl-2 pr-2">
+                <div style="line-height: 9px;" class="pt-4">
+                    <p class="mb-0">- Nhà đầu tư cá nhân được chọn một trong hai phạm vi ủy quyền.</p>
+                    <i>Individual investors can choose one of the two authorization rights.</i>
+                </div>
+                <div style="line-height: 9px;" class="pt-1">
+                    <p class="mb-0">- Nhà đầu tư tổ chức chỉ được chọn
+                        người ủy quyền thực hiện lệnh giao
+                        dịch chứng chỉ quỹ.</p>
+                    <i>Institutional investors can only choose
+                        the authorized person for trading.</i>
+                </div>
+                <div style="line-height: 9px;" class="pt-1">
+                    <p class="mb-0">- Người được ủy quyền hợp pháp
+                        được thực hiện các quyền đã chọn
+                        trong phạm vi tất cả các quỹ do công ty
+                        quản lý quỹ Dragon Capital Việt Nam
+                        (DCVFM) quản lý, đã được đăng ký
+                        phía dưới trong mẫu đơn này.</p>
+                    <i>Legal authorized person can exercise
+                        all the authorized rights toward all the
+                        registered Fund(s) below in this form
+                        managed by Dragon Capital Vietfund
+                        Management (DCVFM).</i>
+                </div>
+            </div>
 
-                                            <td>
-                                                <div class="pr-2" style="line-height: 0px; width: 80px;">
-                                                    <p>Giới tính</p>
-                                                    <i>Sex</i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex justify-content-center flex-column pr-2"
-                                                    style="line-height: 0px;">
-                                                    <p>Nam</p>
-                                                    <i>Male</i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="square mr-2">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex justify-content-center flex-column pr-2"
-                                                    style="line-height: 0px;">
-                                                    <p>Nữ</p>
-                                                    <i>Female</i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="square mr-2">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 40px;">
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="mt-2 pr-2" style="line-height: 0px; ">
-                                        <p>Điện thoại bàn / di động</p>
-                                        <i>Phone number</i>
+            <div class="normal-font-size">
+                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                            <div class="d-flex justify-content-center" style="height:10px">
+                                <p style="font-size: 10px;">1.</p>
+                            </div>
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Họ và tên Người được quỷ quyền</p>
+                                <i style="font-size: 10px;">Full name</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                            <div class="d-flex justify-content-center" style="height:10px">
+                                <p style="font-size: 10px;">2.</p>
+                            </div>
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Chức vụ</p>
+                                <i style="font-size: 10px;">Title</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                            <div class="d-flex justify-content-center" style="height:10px">
+                                <p style="font-size: 10px;">3.</p>
+                            </div>
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2"
+                                style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
+                                <i style="font-size: 10px;">ID/ Passport / Business license no.</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row" style="vertical-align: top;">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                     </div>
-                                </td>
-                                <td class="p-0">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="square mr-2 pl-2 " style="width: 100px;">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="line-height: 0px; width: 75px;">
-                                                    <p>Số Fax</p>
-                                                    <i>Fax No.</i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="square mr-2 pl-2" style="width: 167px;">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="height: 34px;">
-                                <td style="width: 40px;">
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="mt-2 pr-2" style="line-height: 0px;">
-                                        <p>Địa chỉ thường trú</p>
-                                        <i>Residential address</i>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
+                                    <i style="font-size: 10px">Nationality</i>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                     </div>
-                                </td>
-                                <td>
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="pl-5 d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
+                                <i style="font-size: 10px;">Issuing date</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                     </div>
-                                </td>
-                            </tr>
-                            <tr style="height: 34px;">
-                                <td style="width: 40px;">
-                                    <div class="text-center">
-                                        5.
+                                </div>
+                                <div class="d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
+                                    <i style="font-size: 10px;">Issuing place</i>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
                                     </div>
-                                </td>
-                                <td style="width: 200px;">
-                                    <div class="pr-2" style="line-height: 0px;">
-                                        <p>Phạm vi ủy quyền</p>
-                                        <i>Authorization rights</i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                            <div class="d-flex justify-content-center" style="height:10px">
+                                <p style="font-size: 10px;">4.</p>
+                            </div>
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2"
+                                style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
+                                <i style="font-size: 10px;">Date of birth</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-column" style="vertical-align: top;">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
                                     </div>
-                                </td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="square"></div>
-                                            </td>
-                                            <td>
-                                                <p class="small-font-size pl-1 m-0"> Chỉ thực hiện lệnh giao dịch chứng
-                                                    chỉ Quỹ -
-                                                    <i>Entitle trading right only</i>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="square"></div>
-                                            </td>
-                                            <td>
-                                                <p class="small-font-size pl-1 m-0">Thực hiện tất cả các quyền như chủ
-                                                    tài khoản -
-                                                    <i>Entitle all rights of account holder</i>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-        </table>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px; width: 80px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
+                                    <i style="font-size: 10px;">Sex</i>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex justify-content-center flex-column pr-2"
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
+                                        <i style="font-size: 10px;">Male</i>
+                                    </div>
+                                    <div class="square mr-2">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex justify-content-center flex-column pr-2"
+                                        style="line-height: 9px;">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
+                                        <i style="font-size: 10px;">Female</i>
+                                    </div>
+                                    <div class="square mr-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2"
+                                style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn / di động</p>
+                                <i style="font-size: 10px;">Phone number</i>
+                            </div>
+                        </td>
+                        <td class="d-flex flex-row">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column pr-2"
+                                    style="line-height: 9px; width: 80px;">
+                                    <p  style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
+                                    <i  style="font-size: 10px;">Fax No.</i>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ thường trú</p>
+                                <i style="font-size: 10px;">Residential address</i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td style="width: 40px;">
+                            <div class="d-flex justify-content-center" style="height:10px">
+                                <p style="font-size: 10px;">5.</p>
+                            </div>
+                        </td>
+                        <td style="width: 200px;">
+                            <div class="d-flex justify-content-center flex-column pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Phạm vi ủy quyền</p>
+                                <i style="font-size: 10px;">Authorization rights</i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-row pr-2" style="height:10px">
+                                <div class="square mr-1"></div>
+                                <p class="small-font-size">Chỉ thực hiện lệnh giao dịch chứng chỉ Quỹ - <i>Entitle trading right only</i>
+                                </p>
+                            </div>
+                            <div class="d-flex flex-row pr-2 mt-2">
+                                <div class="square mr-1"></div>
+                                <p class="small-font-size">Thực hiện tất cả các quyền như chủ
+                                    tài khoản -
+                                    <i>Entitle all rights of account holder</i>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
         <div style="height: 3px;" class="bg-dra-cal mt-2">
         </div>
 
-        <table class=" normal-font-size pt-2 pb-1">
-            <tr>
-                <td>
-                    <p><b>Head Office:</b> 15th Floor, Me Linh Point Tower,<br>
-                        2 Ngo Duc Ke Street, District 1, HCMC, Vietnam.<br>
-                        Tel: (+84-28) 3825 1488 - Fax: (+84-28) 3825 1489</p>
-                </td>
-                <td style="padding-left: 40px;">
-                    <p style="margin-left: 5px;"><b>Hanoi Office:</b> Unit 903, 9th Floor, BIDV Building,<br>
-                        194 Tran Quang Khai, Hoan Kiem District, Hanoi, Vietnam.<br>
-                        Tel: (+84-24) 3942 8168 - Fax: (+84-24) 3942 8169</p>
-                </td>
-                <td>
-                    <p style="text-align: end; margin-left: 30px;" class="col-dra-cal">Hotline: <b
-                            style="font-size: 16px;">1800 1203</b><br>
-                        www.dcvfm.com.vn
-                    </p>
-                </td>
-            </tr>
-        </table>-->
+        <div class="d-flex flex-row normal-font-size justify-content-between align-items-center pt-2 pb-1">
+            <div>
+                <p><b>Head Office:</b> 15th Floor, Me Linh Point Tower,<br>
+                    2 Ngo Duc Ke Street, District 1, HCMC, Vietnam.<br>
+                    Tel: (+84-28) 3825 1488 - Fax: (+84-28) 3825 1489</p>
+            </div>
+            <div>
+                <p><b>Hanoi Office:</b> Unit 903, 9th Floor, BIDV Building,<br>
+                    194 Tran Quang Khai, Hoan Kiem District, Hanoi, Vietnam.<br>
+                    Tel: (+84-24) 3942 8168 - Fax: (+84-24) 3942 8169</p>
+            </div>
+            <div>
+                <p style="text-align: end;" class="col-dra-cal">Hotline: <b style="font-size: 16px;">1800 1203</b><br>
+                    www.dcvfm.com.vn
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="container-view-1 mx-auto pl-4 pr-4 pt-4">
