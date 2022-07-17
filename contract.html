@@ -82,6 +82,7 @@
 
         .time-new-roman {
             font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
         }
 
         /*!
@@ -1574,6 +1575,10 @@
             td {
                 padding: 0px;
             }
+
+            .height-grid-normal {
+                height: 30px !important;
+            }
         }
 
         /*# sourceMappingURL=bootstrap.min.css.map */
@@ -1590,7 +1595,7 @@
                         alt="logo_" style="width: 130px" />
                 </td>
                 <td style="padding-top:20px;">
-                    <p class="header-title" style="margin-bottom: 11px;">PHIẾU ĐĂNG KÝ GIAO DỊCH CHỨNG CHỈ QUỸ</p>
+                    <p class="header-title" style="margin-bottom: 11px;">PHIẾU ĐĂNG KÝ GIAO DỊCH CHỨNG CHỈ QUỸ MỞ</p>
                     <p class="header-title" style="line-height: 12px;">ACCOUNT OPENING APPLICACTION FORM</p>
                 </td>
             </tr>
@@ -1732,478 +1737,458 @@
                     class="text-light">Investor Details</i></p>
         </div>
 
-        <div class="mt-1 d-flex flex-row">
-            <div style="background: #cacaca; width: 230px;" class="small-font-size pl-2 pr-2">
-                <div style="line-height: 9px;" class="pt-4">
-                    <p class="mb-0">(*) Mục dành cho Nhà đầu tư nước ngoài</p>
-                    <i>For foreign investors only</i>
+        <div class="col-md-12 mt-1 p-0">
+            <div class="d-flex flex-row">
+                <div style="background: #cacaca; width: 200px" class="small-font-size pl-2 pr-2 mt-1">
+                    <div style="line-height: 9px;" class="pt-4">
+                        <p class="mb-0">(*) Mục dành cho Nhà đầu tư nước ngoài</p>
+                        <i>For foreign investors only</i>
+                    </div>
+                    <div style="line-height: 9px;" class="pt-4">
+                        <p class="mb-0">(**) Mục dành cho Nhà đầu tư Pháp nhân</p>
+                        <i>For institutional investors only</i>
+                    </div>
                 </div>
-                <div style="line-height: 9px;" class="pt-4">
-                    <p class="mb-0">(**) Mục dành cho Nhà đầu tư Pháp nhân</p>
-                    <i>For institutional investors only</i>
-                </div>
-            </div>
-            <div class="normal-font-size">
-                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:10px;">
-                                <p style="font-size: 10px;">1.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px; ">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Loại tài khoản</p>
-                                <i style="font-size: 10px;">Account type</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row" style="height:20px;">
-                                <div class="d-flex flex-row mr-2">
-                                    <div class="square mr-2">
-                                        <p style="text-align: center;">x</p>
+                <div class="normal-font-size mt-1 mr-0">
+                    <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                        <tr style="vertical-align: top;">
+                            <td style="width: 30px;">
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">1.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Loại tài khoản</p>
+                                    <i style="font-size: 10px;">Account type</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row" style="height:20px; width: 300px">
+                                    <div class="d-flex flex-row mr-2">
+                                        <div class="square mr-2">
+                                            <p style="text-align: center;">X</p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 10px">Cá nhân/ <i>Individual</i></p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p style="font-size: 10px">Cá nhân/ <i>Individual</i></p>
+                                    <div class="d-flex flex-row">
+                                        <div class="square mr-2">
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 10px">Pháp nhân/ <i>Institution</i></p>
+                                        </div>
                                     </div>
                                 </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height: 30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">2. </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Họ và tên Nhà đầu tư</p>
+                                    <i style="font-size: 10px;">Full name of Investor</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                    <p>${data.kycName}</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height: 30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">3.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
+                                    <i style="font-size: 10px;">ID/ Passport / Business license no.</i>
+                                </div>
+                            </td>
+                            <td>
                                 <div class="d-flex flex-row">
-                                    <div class="square mr-2">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        ${data.kycPersonalId}
                                     </div>
-                                    <div>
-                                        <p style="font-size: 10px">Pháp nhân/ <i>Institution</i></p>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Quốc tịch</p>
+                                        <i style="font-size: 10px">Nationality</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                        ${data.kycNationality}
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:20px;">
-                                <p style="font-size: 10px;">2. </p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px; ">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Họ và tên Nhà đầu tư</p>
-                                <i style="font-size: 10px;">Full name of Investor</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                    <p>FullName</p>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="pl-5 justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày cấp</p>
+                                    <i style="font-size: 10px;">Issuing date</i>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:20px">
-                                <p style="font-size: 10px;">3.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 8px; margin-bottom: 0px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
-                                <i style="font-size: 9px;">ID/ Passport / Business license no.</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="justify-content-start pr-2" style="line-height: 9px; width: 80px">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
-                                    <i style="font-size: 10px">Nationality</i>
-                                </div>
+                            </td>
+                            <td>
                                 <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        ${data.kycIssueDate}
+                                    </div>
+                                    <div class="justify-content-center pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Nơi cấp</p>
+                                        <i style="font-size: 10px;">Issuing place</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                        ${data.kycIssuePlace}
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="pl-4 justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
-                                <i style="font-size: 10px;">Issuing date</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height: 30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">4.</p>
                                 </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
-                                    <i style="font-size: 10px;">Issuing place</i>
+                            </td>
+                            <td>
+                                <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày tháng năm sinh</p>
+                                    <i style="font-size: 10px;">Date of birth</i>
                                 </div>
+                            </td>
+                            <td>
                                 <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        <p>${data.kycDob}</p>
+                                    </div>
+                                    <div class="justify-content-start pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Giới tính</p>
+                                        <i style="font-size: 10px;">Sex</i>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nam</p>
+                                            <i style="font-size: 10px;">Male</i>
+                                        </div>
+                                        <div class="square mr-1">
+                                            <!-- ${data.fieldMale} -->
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nữ</p>
+                                            <i style="font-size: 10px;">Female</i>
+                                        </div>
+                                        <div class="square">
+                                            <!-- ${data.fieldFeMale} -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="d-flex justify-content-center" style="height:20px;">
-                                <p style="font-size: 10px;">4.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
-                                <i style="font-size: 10px;">Date of birth</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                    <p>DateOfBirth</p>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height: 30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">5.</p>
                                 </div>
-                                <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
-                                    <i style="font-size: 10px;">Sex</i>
+                            </td>
+                            <td>
+                                <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Mã số giao dịch (*)</p>
+                                    <i style="font-size: 10px">Securities trading code</i>
                                 </div>
-                                <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
-                                        <i style="font-size: 10px;">Male</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
+                            </td>
+                            <td>
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
                                 </div>
-                                <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
-                                        <i style="font-size: 10px;">Female</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="d-flex justify-content-center" style="height:25px;">
+                                    <p style="font-size: 10px;">6.</p>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="d-flex justify-content-center" style="height:20px;">
-                                <p style="font-size: 10px;">5.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Mã số giao dịch (*)</p>
-                                <i style="font-size: 10px">Securities trading code</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                            </td>
+                            <td>
+                                <div class=" justify-content-start pr-2" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 0px;">Mã số thuế tại Việt Nam</p>
+                                    <i style="font-size: 10px;">Vietnamese Tax ID</i>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="d-flex justify-content-center" style="height:25px;">
-                                <p style="font-size: 10px;">6.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class=" justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Mã số thuế tại Việt Nam</p>
-                                <i style="font-size: 10px;">Vietnamese Tax ID</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
+                            </td>
+                            <td>
+                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <div style="vertical-align: top; padding: 0px; height: 10px;">
-                    <div class="d-flex flex-row">
-                        <div style="padding-left: 4px; vertical-align: top;">
-                            <div class="d-flex p-0 justify-content-center">
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="vertical-align: top; padding: 0px; height: 10px;">
+                        <div class="d-flex flex-row">
+                            <div class="p-0 justify-content-center text-center" style="height: 25px; width: 25px">
                                 <p style="font-size: 10px; margin-top:-3px">7. </p>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-start flex-row pr-2" style="line-height: 9px;">
-                            <p style="font-size: 10px; margin-bottom: 0px;">Thông tin liên hệ/ <i
-                                    style="font-size: 10px;">Contact
-                                    Details</i></p>
+                            <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Thông tin liên hệ/ <i
+                                        style="font-size: 10px;">Contact
+                                        Details</i></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td style="width:160px">
-                            <div class="justify-content-start" style="line-height: 9px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn / di động</p>
-                                <i style="font-size: 10px;">Phone number</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                    <p>PhoneNumber</p>
+                    <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                        <tr style="vertical-align: top;">
+                            <td style="width: 30px;">
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Điện thoại bàn / di động</p>
+                                    <i style="font-size: 10px;">Phone number</i>
                                 </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
-                                    <i style="font-size: 10px;">Fax No.</i>
-                                </div>
+                            </td>
+                            <td>
                                 <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        <p>${data.phoneNumber}</p>
+                                    </div>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
+                                        <i style="font-size: 10px;">Fax No.</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-center pr-2"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ email</p>
-                                <i style="font-size: 10px;">Email address</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                    <p>EmailAddress</p>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Địa chỉ email</p>
+                                    <i style="font-size: 10px;">Email address</i>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-center pr-2"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ thường trú</p>
-                                <i style="font-size: 10px;">Residential address</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px; ">
-                                    <p>PermanentAddress</p>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                    <p>${data.email}</p>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-center pr-2"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ liên lạc</p>
-                                <i style="font-size: 10px;">Mailing address</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                    <p>ContactAddress</p>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Địa chỉ thường trú</p>
+                                    <i style="font-size: 10px;">Residential address</i>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                            <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <div class="mt-1" style="vertical-align: top; padding: 0px; height: 10px;">
-                    <div class="d-flex flex-row">
-                        <div style="width: 20px; vertical-align: top;">
-                            <div class="d-flex p-0 justify-content-center">
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                    <p>${data.fieldPermAddress}</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Địa chỉ liên lạc</p>
+                                    <i style="font-size: 10px;">Mailing address</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                    <p>${data.fieldPermAddress}</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 20px;">
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="vertical-align: top; padding: 0px; height: 13px;">
+                        <div class="d-flex flex-row">
+                            <div class="p-0 justify-content-center text-center" style="height: 25px; width: 25px">
                                 <p style="font-size: 10px; margin-top:-3px">8.</p>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-start flex-row pr-2" style="line-height: 9px;">
-                            <p style="font-size: 10px; margin-bottom: 0px;">Người đại diện pháp luật/ <i
-                                    style="font-size: 10px;">Legal Representative Details (**)</i></p>
+                            <div class="justify-content-start pr-2" style="line-height: 9px;">
+                                <p style="font-size: 10px; margin-bottom: 0px;">Người đại diện pháp luật/ <i style="font-size: 10px;">Legal
+                                        Representative Details (**)</i></p>
+                            </div>
                         </div>
                     </div>
+                    <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                        <tr style="vertical-align: top;">
+                            <td style="width: 26px;">
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Họ tên người đại diện</p>
+                                    <i style="font-size: 10px;">Full name</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="square pl-2 justify-content-start" style="width: 305px; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Chức vụ</p>
+                                    <i style="font-size: 10px;">Title</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày tháng năm sinh</p>
+                                    <i style="font-size: 10px;">Date of birth</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        <p>${data.kycDob}</p>
+                                    </div>
+                                    <div class="justify-content-start pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Giới tính</p>
+                                        <i style="font-size: 10px;">Sex</i>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nam</p>
+                                            <i style="font-size: 10px;">Male</i>
+                                        </div>
+                                        <div class="square mr-1">
+                                            <!-- ${data.fieldMale} -->
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nữ</p>
+                                            <i style="font-size: 10px;">Female</i>
+                                        </div>
+                                        <div class="square">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Số CMND/ Hộ chiếu</p>
+                                    <i style="font-size: 10px;">ID/ Passport</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start" style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Quốc tịch</p>
+                                        <i style="font-size: 10px">Nationality</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="pl-5 justify-content-start pr-2" style="line-height: 9px; height: 25px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày cấp</p>
+                                    <i style="font-size: 10px;">Issuing date</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start" style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-center pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Nơi cấp</p>
+                                        <i style="font-size: 10px;">Issuing place</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; height: 25px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Điện thoại bàn / di động</p>
+                                    <i style="font-size: 10px;">Phone number</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
+                                        <i style="font-size: 10px;">Fax No.</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Địa chỉ liên lạc</p>
+                                    <i style="font-size: 10px;">Mailing address</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td style="width: 170px;">
-                            <div class="justify-content-start"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Họ tên người đại diện</p>
-                                <i style="font-size: 10px;">Full name</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Chức vụ</p>
-                                <i style="font-size: 10px;">Title</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
-                                <i style="font-size: 10px;">Date of birth</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                    <p>DateOfBirth</p>
-                                </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
-                                    <i style="font-size: 10px;">Sex</i>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
-                                        <i style="font-size: 10px;">Male</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="d-flex justify-content-center flex-column pr-2"
-                                        style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
-                                        <i style="font-size: 10px;">Female</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Số CMND/ Hộ chiếu</p>
-                                <i style="font-size: 10px;">ID/ Passport</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row" style="height: 20px">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
-                                    <i style="font-size: 10px">Nationality</i>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="pl-4 justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
-                                <i style="font-size: 10px;">Issuing date</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="d-flex justify-content-center flex-column pr-2"
-                                    style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
-                                    <i style="font-size: 10px;">Issuing place</i>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start" style="line-height: 9px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn/di động</p>
-                                <i style="font-size: 10px;">Phone number</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start"
-                                style="line-height: 9px; height:20px; margin-left: 12px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ liên lạc</p>
-                                <i style="font-size: 10px;">Mailing address</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
             </div>
         </div>
         <div class="col-md-12 text-light bg-dra-cal pt-1 pb-1 pl-1" style="margin-top: 10px;">
@@ -2211,229 +2196,229 @@
                     class="text-light">Authorized person</i></p>
         </div>
 
-        <div class="mt-1 d-flex flex-row">
-            <div style="background: #cacaca; width: 230px;" class="small-font-size pl-2 pr-2">
-                <div style="line-height: 9px;" class="pt-4">
-                    <p class="mb-0">- Nhà đầu tư cá nhân được chọn một trong hai phạm vi ủy quyền.</p>
-                    <i>Individual investors can choose one of the two authorization rights.</i>
+        <div class="col-md-12 mt-1 p-0">
+            <div class="d-flex flex-row">
+                <div style="background: #cacaca; width: 200px" class="small-font-size pl-2 pr-2 pb-1">
+                    <div style="line-height: 11px;" class="pt-2">
+                        <p class="mb-0">- Nhà đầu tư cá nhân được chọn một trong hai phạm vi ủy quyền.</p>
+                        <i>Individual investors can choose one of the two authorization rights.</i>
+                    </div>
+                    <div style="line-height: 11px;" class="pt-1">
+                        <p class="mb-0">- Nhà đầu tư tổ chức chỉ được chọn
+                            người ủy quyền thực hiện lệnh giao
+                            dịch chứng chỉ quỹ.</p>
+                        <i>Institutional investors can only choose
+                            the authorized person for trading.</i>
+                    </div>
+                    <div style="line-height: 11px;" class="pt-1">
+                        <p class="mb-0">- Người được ủy quyền hợp pháp
+                            được thực hiện các quyền đã chọn
+                            trong phạm vi tất cả các quỹ do công ty
+                            quản lý quỹ Dragon Capital Việt Nam
+                            (DCVFM) quản lý, đã được đăng ký
+                            phía dưới trong mẫu đơn này.</p>
+                        <i>Legal authorized person can exercise
+                            all the authorized rights toward all the
+                            registered Fund(s) below in this form
+                            managed by Dragon Capital Vietfund
+                            Management (DCVFM).</i>
+                    </div>
                 </div>
-                <div style="line-height: 9px;" class="pt-1">
-                    <p class="mb-0">- Nhà đầu tư tổ chức chỉ được chọn
-                        người ủy quyền thực hiện lệnh giao
-                        dịch chứng chỉ quỹ.</p>
-                    <i>Institutional investors can only choose
-                        the authorized person for trading.</i>
+        
+                <div class="normal-font-size">
+                    <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
+                        <tr style="vertical-align: top;">
+                            <td style="width: 30px;">
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">1.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Họ và tên Người được uỷ quyền</p>
+                                    <i style="font-size: 10px;">Full name</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="square pl-2 justify-content-start" style="width: 305px; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">2.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Chức vụ</p>
+                                    <i style="font-size: 10px;">Title</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="square pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">3.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
+                                    <i style="font-size: 10px;">ID/ Passport / Business license no.</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start" style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Quốc tịch</p>
+                                        <i style="font-size: 10px">Nationality</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="pl-5 justify-content-start pr-2" style="line-height: 9px; height: 20px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày cấp</p>
+                                    <i style="font-size: 10px;">Issuing date</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row" style="height: 25px">
+                                    <div class="square mr-1 pl-2 justify-content-start" style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-center pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Nơi cấp</p>
+                                        <i style="font-size: 10px;">Issuing place</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">4.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Ngày tháng năm sinh</p>
+                                    <i style="font-size: 10px;">Date of birth</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                        <p>${data.kycDob}</p>
+                                    </div>
+                                    <div class="justify-content-start pr-2" style="line-height: 9px; width: 70px;">
+                                        <p style="font-size: 10px; margin-bottom: 2px;">Giới tính</p>
+                                        <i style="font-size: 10px;">Sex</i>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nam</p>
+                                            <i style="font-size: 10px;">Male</i>
+                                        </div>
+                                        <div class="square mr-1">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row" style="width: 50px">
+                                        <div class="justify-content-start mr-1" style="line-height: 9px;">
+                                            <p style="font-size: 10px; margin-bottom: 2px;">Nữ</p>
+                                            <i style="font-size: 10px;">Female</i>
+                                        </div>
+                                        <div class="square">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; height: 25px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Điện thoại bàn / di động</p>
+                                    <i style="font-size: 10px;">Phone number</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row">
+                                    <div class="square mr-1 pl-2 justify-content-start"
+                                        style="width: 130px; height: 20px">
+                                    </div>
+                                    <div class="justify-content-start" style="line-height: 9px; width: 70px">
+                                        <p style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
+                                        <i style="font-size: 10px;">Fax No.</i>
+                                    </div>
+                                    <div class="square pl-2 justify-content-start" style="width: 100px; height: 20px">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px; height: 25px;">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Địa chỉ thường trú</p>
+                                    <i style="font-size: 10px;">Residential address</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" square mr-2 pl-2 justify-content-start" style="width: 100%; height: 20px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <div class="justify-content-start text-center" style="height:30px; margin-top: -3px">
+                                    <p style="font-size: 10px;">5.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="justify-content-start" style="line-height: 9px; width: 170px">
+                                    <p style="font-size: 10px; margin-bottom: 2px;">Phạm vi ủy quyền</p>
+                                    <i style="font-size: 10px;">Authorization rights</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-row" style="width: 100%; height:10px">
+                                    <div class="square mr-1"></div>
+                                    <p class="small-font-size">Chỉ thực hiện lệnh giao dịch chứng chỉ Quỹ-<i>Entitle
+                                            trading right only</i>
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row mt-2" style="height:10px">
+                                    <div class="square mr-1"></div>
+                                    <p class="small-font-size" style="line-height: 9px">Thực hiện tất cả các quyền như chủ
+                                        tài khoản-<i>Entitle all rights of <br /> account holder</i>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div style="line-height: 9px;" class="pt-1">
-                    <p class="mb-0">- Người được ủy quyền hợp pháp
-                        được thực hiện các quyền đã chọn
-                        trong phạm vi tất cả các quỹ do công ty
-                        quản lý quỹ Dragon Capital Việt Nam
-                        (DCVFM) quản lý, đã được đăng ký
-                        phía dưới trong mẫu đơn này.</p>
-                    <i>Legal authorized person can exercise
-                        all the authorized rights toward all the
-                        registered Fund(s) below in this form
-                        managed by Dragon Capital Vietfund
-                        Management (DCVFM).</i>
-                </div>
-            </div>
-
-            <div class="normal-font-size">
-                <table cellSpacing="0" cellPadding="0" style="border-width: 0px; padding-bottom: 0px;">
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:10px;">
-                                <p style="font-size: 10px;">1.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Họ và tên Người được uỷ quyền</p>
-                                <i style="font-size: 10px;">Full name</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:20px">
-                                <p style="font-size: 10px;">2.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Chức vụ</p>
-                                <i style="font-size: 10px;">Title</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:20px">
-                                <p style="font-size: 10px;">3.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 8px; margin-bottom: 0px;">Số CMND/ Hộ chiếu/ GCN ĐKKD</p>
-                                <i style="font-size: 9px;">ID/ Passport / Business license no.</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="justify-content-start pr-2" style="line-height: 9px; width: 80px">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Quốc tịch</p>
-                                    <i style="font-size: 10px">Nationality</i>
-                                </div>
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="pl-4 justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày cấp</p>
-                                <i style="font-size: 10px;">Issuing date</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Nơi cấp</p>
-                                    <i style="font-size: 10px;">Issuing place</i>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:20px">
-                                <p style="font-size: 10px;">4.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Ngày tháng năm sinh</p>
-                                <i style="font-size: 10px;">Date of birth</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Giới tính</p>
-                                    <i style="font-size: 10px;">Sex</i>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="justify-content-center pr-2" style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nam</p>
-                                        <i style="font-size: 10px;">Male</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="justify-content-center pr-2" style="line-height: 9px;">
-                                        <p style="font-size: 10px; margin-bottom: 0px;">Nữ</p>
-                                        <i style="font-size: 10px;">Female</i>
-                                    </div>
-                                    <div class="square mr-2">
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-start pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Điện thoại bàn / di động</p>
-                                <i style="font-size: 10px;">Phone number</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 100px;">
-                                </div>
-                                <div class="justify-content-center pr-2" style="line-height: 9px; width: 80px;">
-                                    <p style="font-size: 10px; margin-bottom: 0px;">Số Fax</p>
-                                    <i style="font-size: 10px;">Fax No.</i>
-                                </div>
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 170px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                        </td>
-                        <td>
-                            <div class="justify-content-center pr-2" style="line-height: 9px; height: 20px">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Địa chỉ thường trú</p>
-                                <i style="font-size: 10px;">Residential address</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row">
-                                <div class="square mr-2 pl-2 justify-content-start" style="width: 360px;">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: top;">
-                        <td>
-                            <div class="justify-content-center" style="height:10px">
-                                <p style="font-size: 10px;">5.</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="justify-content-center pr-2" style="line-height: 9px;">
-                                <p style="font-size: 10px; margin-bottom: 0px;">Phạm vi ủy quyền</p>
-                                <i style="font-size: 10px;">Authorization rights</i>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-row pr-2" style="height:10px">
-                                <div class="square mr-1"></div>
-                                <p class="small-font-size">Chỉ thực hiện lệnh giao dịch chứng chỉ Quỹ - <i>Entitle
-                                        trading right only</i>
-                                </p>
-                            </div>
-                            <div class="d-flex flex-row pr-2 mt-2" style="height:10px">
-                                <div class="square mr-1"></div>
-                                <p class="small-font-size">Thực hiện tất cả các quyền như chủ
-                                    tài khoản -
-                                    <i>Entitle all rights of <br /> account holder</i>
-                                </p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
             </div>
         </div>
 
-        <div style="height: 3px;" class="bg-dra-cal mt-5">
+        <div style="height: 3px;" class="bg-dra-cal mt-1">
         </div>
 
         <div class="d-flex flex-row small-font-size justify-content-between align-items-center pt-2 pb-1">
@@ -2850,7 +2835,7 @@
                         </td>
                         <td>
                             <div class="square justify-content-start pl-2" style="width: 98%">
-                                <p>BankAccountOwner</p>
+                                <p>${data.fullNameBank}</p>
                             </div>
                         </td>
                         <td>
@@ -2874,7 +2859,7 @@
                         </td>
                         <td>
                             <div class="square justify-content-start pl-2" style="width: 98%">
-                                <p>PhoneNumber</p>
+                                <p>${data.phoneNumber}</p>
                             </div>
                         </td>
                         <td>
@@ -2966,7 +2951,7 @@
                         </td>
                         <td style="width: 85%;">
                             <div class="square justify-content-start pl-2" style="width: 100%;">
-                                <p>EmailAddress</p>
+                                <p>${data.email}</p>
                             </div>
                         </td>
                     </tr>
@@ -2984,7 +2969,7 @@
                         </td>
                         <td style="width: 85%;">
                             <div class="square justify-content-start pl-2" style="width: 100%;">
-                                <p>PhoneNumber</p>
+                                <p>${data.phoneNumber}</p>
                             </div>
                         </td>
                     </tr>
@@ -4130,8 +4115,10 @@
                         alt="logo_" style="width: 130px" />
                 </td>
                 <td style="padding-top:20px;">
-                    <p class="header-title" style="margin-bottom: 11px;">PHIẾU ĐĂNG KÝ GIAO DỊCH CHỨNG CHỈ QUỸ</p>
-                    <p class="header-title" style="line-height: 12px;">ACCOUNT OPENING APPLICACTION FORM</p>
+                    <p class="header-title" style="margin-bottom: 11px; font-size: 15px;">PHIẾU ĐĂNG KÝ DỊCH VỤ GIAO
+                        DỊCH CHỨNG KHOÁN TRỰC TUYẾN</p>
+                    <p class="header-title" style="line-height: 12px; font-size: 15px;">ONLINE SECURITIES TRADING
+                        SERVICE REQUEST</p>
                 </td>
             </tr>
         </table>
@@ -4222,7 +4209,7 @@
                     </td>
                     <td colspan="3">
                         <div class="square justify-content-start pl-2" style="width: 100%; height: 20px">
-                            <p>CustomerId</p>
+                            <p>${data.investmentNumber}</p>
                         </div>
                     </td>
                 </tr>
@@ -4235,7 +4222,7 @@
                     </td>
                     <td colspan="3">
                         <div class="square justify-content-start pl-2" style="width: 100%; height: 20px">
-                            <p>FullName</p>
+                            <p>${data.kycName}</p>
                         </div>
                     </td>
                 </tr>
@@ -4248,7 +4235,7 @@
                     </td>
                     <td colspan="3">
                         <div class="square justify-content-start pl-2" style="width: 100%; height: 20px">
-                            <p>DkshNumber</p>
+                            <p>${data.kycPersonalId}</p>
                         </div>
                     </td>
                 </tr>
@@ -4313,7 +4300,7 @@
                 </td>
                 <td>
                     <div class="square mr-2 pl-2 justify-content-start" style="width: 280px;">
-                        <p>EmailAddress</p>
+                        <p>${data.email}</p>
                     </div>
                 </td>
                 <td>
@@ -4324,7 +4311,7 @@
                 </td>
                 <td>
                     <div class="square mr-2 pl-2 justify-content-start" style="width: 160px;">
-                        <p>PhoneNumber</p>
+                        <p>${data.phoneNumber}</p>
                     </div>
                 </td>
             </tr>
@@ -5488,65 +5475,51 @@
                 </p>
             </div>
         </div>
-
-        <div class="container-view-1 mx-auto" style="margin-top:250px">
+        <div class="container-view-1 mx-auto" style="margin-top:300px"></div>
+        <div class="container-view-1 mx-auto" style="margin-top:0px; font-size:14px;">
             <div style="text-align: center;">
-                <h5 style="font-weight: 100;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h5>
-                <h5>Độc lập – Tự do – Hạnh phúc</h5>
-                <p>---o0o---</p>
-                <h5 class="time-new-roman mt-4" style="font-weight: bold;">GIẤY ĐỀ NGHỊ CUNG CẤP THÔNG TIN</h5>
+                <h5 style="font-weight: 100;font-size:14px">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h5>
+                <h5 style="font-size:14px">Độc lập – Tự do – Hạnh phúc</h5>
+                <p style="font-size:14px">---o0o---</p>
+                <h5 class="time-new-roman mt-4" style="font-weight: bold;font-size:14px">GIẤY ĐỀ NGHỊ CUNG CẤP THÔNG TIN
+                </h5>
             </div>
 
             <div class="pl-3 pr-3">
-                <h5>Kính gửi: CÔNG TY CP QUẢN LÝ QUỸ ĐẦU TƯ DRAGON CAPITAL VIỆT NAM</h5>
-                <h5>Tôi/Chúng Tôi là: <input style="border-width: 0px; background-color: transparent;"
-                        placeholder="Fullname" /></h5>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4 p-0">
-                            <div class="row">
-                                <h5 class="col-md-8">CMND/ĐKKD: Số</h5>
-                                <input class="col-md-4"
-                                    style="border-width: 0px; background-color: transparent; width: 100%;"
-                                    placeholder="DkshNumber" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <div class="row">
-                                <h5 class="col-md-1">do</h5>
-                                <input class="col-md-10"
-                                    style="border-width: 0px; background-color: transparent; width: 100%;"
-                                    placeholder="DkshIssuedPlace" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <div class="row">
-                                <h5 class="col-md-5">cấp ngày</h5>
-                                <input class="col-md-7"
-                                    style="border-width: 0px; background-color: transparent; width: 100%;"
-                                    placeholder="DkshIssuedDate" />
-                            </div>
-                        </div>
-                    </div>
+                <h5 style="font-size:14px">Kính gửi: CÔNG TY CP QUẢN LÝ QUỸ ĐẦU TƯ DRAGON CAPITAL VIỆT NAM</h5>
+                <h5 style="font-size:14px">Tôi/Chúng Tôi là: <input
+                        style="border-width: 0px; background-color: transparent;" placeholder="Fullname"
+                        value="${data.kycName}" /></h5>
+                <div style="font-size:14px; white-space: nowrap;">
+                    <p>
+                    <h5 style="font-size:14px;">CMND/ĐKKD: Số ${data.kycPersonalId} do ${data.kycIssuePlace} cấp ngày
+                        ${data.kycIssueDate}</h5>
+                    </p>
                 </div>
-                <h5>Địa chỉ: <input style="border-width: 0px; background-color: transparent;"
-                        placeholder="ContactAddress" /></h5>
-                <h5>Số Tài khoản giao dịch chứng chỉ quỹ: <input
-                        style="border-width: 0px; background-color: transparent;" placeholder="CustomerId" /></h5>
-                <h5>Mở tại: CÔNG TY CP QUẢN LÝ QUỸ ĐẦU TƯ DRAGON CAPITAL VIỆT NAM (“DCVFM”)</h5>
-                <h6>Bằng văn bản này, tôi/chúng tôi đề nghị DCVFM thực hiện việc cung cấp thông tin cá nhân của
+                <h5 style="font-size:14px">Địa chỉ: <input
+                        style="border-width: 0px; background-color: transparent; font-size:14px; width: 70%;"
+                        placeholder="ContactAddress" value="${data.fieldPermAddress}" /></h5>
+                <h5 style="font-size:14px">Số Tài khoản giao dịch chứng chỉ quỹ: <input
+                        style="border-width: 0px; background-color: transparent;" placeholder=""
+                        value="${data.investmentNumber}" /></h5>
+                <h5 style="font-size:14px">Mở tại: CÔNG TY CP QUẢN LÝ QUỸ ĐẦU TƯ DRAGON CAPITAL VIỆT NAM (“DCVFM”)</h5>
+                <h6 style="font-size:14px">Bằng văn bản này, tôi/chúng tôi đề nghị DCVFM thực hiện việc cung cấp thông
+                    tin cá nhân của
                     tôi/chúng tôi như sau:</h6>
-                <h6>1. Đề nghị DCVFM cung cấp các thông tin có liên quan đến tài khoản giao dịch chứng chỉ quỹ của
+                <h6 style="font-size:14px">1. Đề nghị DCVFM cung cấp các thông tin có liên quan đến tài khoản giao dịch
+                    chứng chỉ quỹ của
                     tôi/chúng tôi hiện đang nắm giữ tại DCVFM (“Thông tin”), bao gồm:</h6>
-                <h6>- Thông tin tài khoản của tôi/chúng tôi tại DCVFM, bao gồm: Số tài khoản giao dịch chứng chỉ quỹ,
+                <h6 style="font-size:14px">- Thông tin tài khoản của tôi/chúng tôi tại DCVFM, bao gồm: Số tài khoản giao
+                    dịch chứng chỉ quỹ,
                     thông tin cá nhân (Họ tên, ngày tháng năm sinh, giới tính, địa chỉ thường trú), thông tin
                     CMND/CCCD, thông tin liên lạc (Số điện thoại, email, địa chỉ liên lạc);</h6>
-                <h6>- Xác nhận số dư bao gồm số dư chứng chỉ quỹ, danh mục đầu tư và lợi nhuận;</h6>
-                <h6>- Sao kê giao dịch chứng chỉ quỹ mở.<br /> cho:</h6>
+                <h6 style="font-size:14px">- Xác nhận số dư bao gồm số dư chứng chỉ quỹ, danh mục đầu tư và lợi nhuận;
+                </h6>
+                <h6 style="font-size:14px">- Sao kê giao dịch chứng chỉ quỹ mở.<br /> cho:</h6>
 
                 <div class="col-md-12 p-0 mt-5">
                     <div class="row">
-                        <h5 class="col-md-2" style="font-weight: bold;">Tên tổ chức:</h5>
+                        <h5 class="col-md-2" style="font-weight: bold;font-size:14px">Tên tổ chức:</h5>
                         <input class="col-md-10" style="border-width: 0px; background-color: transparent; "
                             placeholder='CTCP Dịch vụ di động trực tuyến ("Momo")'
                             value='CTCP Dịch vụ di động trực tuyến ("Momo")' />
@@ -5554,14 +5527,14 @@
                 </div>
                 <div class="col-md-12 p-0 mt-3">
                     <div class="row">
-                        <h5 class="col-md-3" style="font-weight: bold;">Tên tổ chức viết tắt:</h5>
+                        <h5 class="col-md-3" style="font-weight: bold;font-size:14px">Tên tổ chức viết tắt:</h5>
                         <input class="col-md-9" style="border-width: 0px; background-color: transparent; "
-                            placeholder='M Service JSC' value="'M Service JSC" />
+                            placeholder="M Service JSC" value="M Service JSC" />
                     </div>
                 </div>
                 <div class="col-md-12 p-0 mt-3">
                     <div class="row">
-                        <h5 class="col-md-2" style="font-weight: bold;">Địa chỉ:</h5>
+                        <h5 class="col-md-2" style="font-weight: bold;font-size:14px">Địa chỉ:</h5>
                         <input class="col-md-10" style="border-width: 0px; background-color: transparent; "
                             placeholder='Lầu 6, Phú Mỹ Hưng Tower, 08 Hoàng Văn Thái, P. Tân Phú, Quận 7, TP.HCM'
                             value="Lầu 6, Phú Mỹ Hưng Tower, 08 Hoàng Văn Thái, P. Tân Phú, Quận 7, TP.HCM'" />
@@ -5569,64 +5542,67 @@
                 </div>
                 <div class="col-md-12 p-0 mt-3">
                     <div class="row">
-                        <h5 class="col-md-3" style="font-weight: bold;">Mã số doanh nghiệp:</h5>
+                        <h5 class="col-md-3" style="font-weight: bold;font-size:14px">Mã số doanh nghiệp:</h5>
                         <input class="col-md-9" style="border-width: 0px; background-color: transparent; "
                             placeholder='90222363502' value="90222363502" />
                     </div>
                 </div>
                 <div class="col-md-12 p-0 mt-3">
                     <div class="row">
-                        <p class="col-md-6">Để sử dụng vào mục đích theo dõi thông tin trên ứng dụng</p>
+                        <p class="col-md-6" style="font-size:14px">Để sử dụng vào mục đích theo dõi thông tin trên ứng
+                            dụng</p>
                         <input class="col-md-6" style="border-width: 0px; background-color: transparent; "
                             placeholder='MoMo' value="MoMo" />
                     </div>
                 </div>
-                <p>
+                <p style="font-size:14px">
                     Phương thức cung cấp Thông Tin: DCVFM gửi thông tin qua API cho MoMo và hiển thị trên giao
                     diện của ứng dụng MoMo tại thời điểm tôi sử dụng ứng dụng MoMo.
                 </p>
             </div>
         </div>
 
-        <div class="container-view-1 mx-auto pl-4 pr-4 pt-5 time-new-roman">
-            <p>
+        <div class="container-view-1 mx-auto pl-4 pr-4 pt-5 time-new-roman" style="font-size:14px">
+            <p style="font-size:14px">
                 Tôi/Chúng tôi chấp thuận việc DCVFM cung cấp Thông Tin cho MoMo là liên tục, bao gồm cả các
                 thông tin được cập nhật, cho đến khi tôi/chúng tôi có văn bản đề nghị chấm dứt việc cung cấp Thông
                 Tin.
             </p>
-            <h6>2. Bằng cách ký tên vào thỏa thuận này, tôi/chúng tôi, <input
-                    style="border-width: 0px; background-color: transparent; width: 100px; " placeholder='Fullname' />
+            <h6 style="font-size:14px">2. Bằng cách ký tên vào thỏa thuận này, tôi/chúng tôi, ${data.kycName}
                 đã
                 đọc, hiểu và đồng ý tất cả rằng, trách nhiệm bảo mật thông tin của <input
                     style="border-width: 0px; background-color: transparent; width: 100px; " placeholder='MoMo'
                     value="MoMo" /> (sau khi DCVFM đã
                 gửi Thông tin qua API cho MoMo) là không nằm trong khả năng kiểm soát và không liên quan
                 đến DCVFM, và là trách nhiệm pháp lý hoàn toàn độc lập, riêng biệt giữa tôi và MoMo</h6>
-            <h6>Tôi/Chúng tôi đồng ý miễn trừ hoàn toàn cho DCVFM về bất kỳ trách nhiệm pháp lý nào, khi thực
+            <h6 style="font-size:14px">Tôi/Chúng tôi đồng ý miễn trừ hoàn toàn cho DCVFM về bất kỳ trách nhiệm pháp lý
+                nào, khi thực
                 hiện việc cung cấp Thông Tin cho MoMo. Tôi Tôi/Chúng tôi thừa nhận mọi rủi ro và chịu trách nhiệm
                 hoàn toàn về mọi hậu quả pháp lý phát sinh nếu có liên quan đến việc đồng ý cho DCVFM cung cấp
                 Thông Tin cho MoMo và việc MoMo sử dụng các thông tin này.</h6>
 
-            <h6>Tôi/Chúng tôi đề nghị DCVFM cung cấp các thông tin trên theo yêu cầu.</h6>
+            <h6 style="font-size:14px">Tôi/Chúng tôi đề nghị DCVFM cung cấp các thông tin trên theo yêu cầu.</h6>
 
-            <div class="col-md-12 mt-4">
+            <div class="col-md-12 mt-4" style="font-size:14px">
                 <div class="row">
                     <div class="col-md-5 text-center">
                         <p style="margin-bottom: 0px; font-size: 13px;">
-                            TP Hồ Chí Minh, Ngày.........tháng.........năm.........</p>
-                        <p style="font-size: 17px; margin-bottom: 0px;"><b>NGƯỜI ĐỀ NGHỊ </b></p>
+                            TP Hồ Chí Minh, Ngày ${date} tháng ${month} năm ${year}</p>
+                        <p style="font-size: 17px; margin-bottom: 0px;font-size:14px"><b>NGƯỜI ĐỀ NGHỊ </b></p>
                     </div>
                     <div class="col-md-7 text-center">
-                        <b style="font-size: 17px; margin-bottom: 0px;">XÁC NHẬN CỦA DCVFM</b><br />
+                        <b style="font-size: 17px; margin-bottom: 0px;font-size:14px">XÁC NHẬN CỦA DCVFM</b><br />
                         <img style="width: 130px;"
                             src="data:image/jpeg;base64,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" /><br />
-                        <b style="font-size: 13px; margin-bottom: 0px;">Nguyễn Minh Đăng Khánh</b>
-                        <p style="font-size: 13px; margin-bottom: 0px;">Giám đốc điều hành nghiệp vụ hỗ trợ đầu tư - COO
+                        <b style="font-size: 13px; margin-bottom: 0px;font-size:14px">Nguyễn Minh Đăng Khánh</b>
+                        <p style="font-size: 13px; margin-bottom: 0px;font-size:14px">Giám đốc điều hành nghiệp vụ hỗ
+                            trợ đầu tư - COO
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
